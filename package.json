@@ -1,15 +1,21 @@
 {
-  "name": "faselhd-stremio-addon",
+  "name": "stremio-arabic-addon",
   "version": "1.0.0",
-  "description": "FaselHD Addon for Stremio",
-  "main": "index.js",
+  "description": "Arabic content addon for Stremio - Aggregates FaselHD, EgyDead, Akwam, Arabseed",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/index.js",
+    "dev": "vercel dev"
   },
   "dependencies": {
+    "express": "^4.18.2",
+    "stremio-addon-sdk": "^1.6.10",
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.18.2",
-    "stremio-addon-sdk": "^1.14.3"
+    "qs": "^6.11.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
